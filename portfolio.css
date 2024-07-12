@@ -35,6 +35,7 @@ header .header-list {
 
 header .header-list a{
     text-decoration: none;
+    color: black;
 }
 
 .hero{
