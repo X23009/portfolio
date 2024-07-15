@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
 
-
+html{
+    --strawberry: #D8412F;
+    --papaya: #FE7A47;
+    --milk: #FCFEFE;
+    --granola: #F5CA99;
+}
 
 body{
-    background-color: #faebd7;
+    background-color: var(--granola);
     font-family: "Poppins", monospace, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -24,9 +29,9 @@ hr{
 
 #loading{
     position: fixed;
-    background-image: radial-gradient(white 20%, #faebd7 20%);
+    background-image: radial-gradient(#FCFEFE 20%, #F5CA99 20%);
     background-size: 20px 20px;
-    color: black;
+    color: var(--strawberry);
     inset: 0;
     display: grid;
     place-items: center;
@@ -56,6 +61,7 @@ hr{
 header {
     position: fixed;
     width: 100%;
+    height: 100px;
     z-index: 10;
 }
 
@@ -81,7 +87,7 @@ header .header-list {
 
 header .header-list a{
     text-decoration: none;
-    color: black;
+    color: var(--papaya);
 }
 
 @media (width>=769px){
@@ -101,6 +107,7 @@ header .header-list a{
     width: 100%;
     height: 650px;
     position: relative;
+    color: var(--papaya);
 }
 .hero img{
     position: fixed;
@@ -151,11 +158,13 @@ header .header-list a{
     width: 100%;
     height: 650px;
     margin-top: 100px;
+    color: var(--milk);
 }
 
 .illustrater h3{
     font-size: 30px;
     text-align: center;
+    color: var(--papaya);
 }
 
 .illustrater-container{
@@ -169,7 +178,7 @@ header .header-list a{
 }
 
 .illustrater-text{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 180px;
     display: block;
@@ -183,11 +192,13 @@ header .header-list a{
     width: 100%;
     height: 650px;
     margin-top: 100px;
+    color: var(--milk);
 }
 
 .video h3{
     font-size: 30px;
     text-align: center;
+    color: var(--papaya);
 }
 
 .video-container{
@@ -202,7 +213,7 @@ header .header-list a{
 }
 
 .video-text{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 180px;
     display: block;
@@ -216,11 +227,13 @@ header .header-list a{
     width: 100%;
     height: 650px;
     margin-top: 100px;
+    color: var(--milk);
 }
 
 .cg h3{
     font-size: 30px;
     text-align: center;
+    color: var(--papaya);
 }
 
 .cg-container{
@@ -234,7 +247,7 @@ header .header-list a{
 }
 
 .cg-text{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 180px;
     display: block;
@@ -326,6 +339,7 @@ header .header-list a{
     width: 100%;
     height: 600px;
     margin-top: 100px;
+    color: var(--milk);
 }
 
 .collection-container{
@@ -368,10 +382,11 @@ header .header-list a{
     width: 100%;
     height: 300px;
     margin-top: 150px;
+    color: var(--milk);
 }
 
 .thanks-container{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 180px;
     display: block;
@@ -402,6 +417,7 @@ header .header-list a{
     width: 100%;
     height: 600px;
     margin-top: 100px;
+    color: var(--milk);
 }
 
 .profile-top{
@@ -409,6 +425,7 @@ header .header-list a{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--papaya);
 }
 
 .profile-logo{
@@ -416,7 +433,7 @@ header .header-list a{
 }
 
 .profile-text{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 180px;
     display: block;
@@ -427,7 +444,7 @@ header .header-list a{
 }
 
 .profile-skill{
-    background-color: white;
+    background-color: var(--strawberry);
     width: 300px;
     height: 100px;
     display: block;
@@ -437,8 +454,56 @@ header .header-list a{
     justify-content: center;
 }
 
+@media (width>=769px){
+    .profile{
+        height: 700px;
+    }
+    .profile-container{
+        position: relative;
+    }
+    .profile-top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--papaya);
+        margin: 0;
+        position: relative;
+        right: 200px;
+        font-size: 20px;
+    }
+    .profile-logo{
+        margin-left: 100px;
+    }
+    .profile-text{
+        background-color: var(--strawberry);
+        width: 800px;
+        height: 400px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .profile-skill{
+        background-color: var(--strawberry);
+        width: 300px;
+        height: 100px;
+        display: block;
+        margin:  50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        left: 750px;
+    }
+}
+
 footer{
-    background-color: black;
+    background-color: var(--papaya);
     width: 100%;
     height: 180px;
     display: flex;
@@ -447,7 +512,7 @@ footer{
 }
 
 footer p{
-    color: white;
+    color: var(--milk);
 }
 
 
