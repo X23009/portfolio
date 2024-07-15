@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.onload = function() {
         setTimeout(() =>{
             loading.classList.add("loaded");
-        }, 1300);
+        }, 800);
     }
 });
 

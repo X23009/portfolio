@@ -29,7 +29,7 @@ hr{
 
 #loading{
     position: fixed;
-    background-image: radial-gradient(#FCFEFE 20%, #F5CA99 20%);
+    background-image: radial-gradient(#49A2D3 20%, #F5CA99 20%);
     background-size: 20px 20px;
     color: var(--strawberry);
     inset: 0;
