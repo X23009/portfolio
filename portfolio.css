@@ -125,12 +125,6 @@ header .header-list a{
     font-size: 15px;
 }
 
-.illustrater{
-    width: 100%;
-    height: 650px;
-    margin-top: 100px;
-}
-
 @media (width>=769px){
     .hero{
         width: 100%;
@@ -153,12 +147,19 @@ header .header-list a{
     }
 }
 
-.illustrater-container{
+.illustrater{
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+}
+
+.illustrater h3{
+    font-size: 30px;
     text-align: center;
 }
 
-.illustrater-container h3{
-    font-size: 30px;
+.illustrater-container{
+    text-align: center;
 }
 
 .illustrater-container img{
@@ -184,13 +185,15 @@ header .header-list a{
     margin-top: 100px;
 }
 
+.video h3{
+    font-size: 30px;
+    text-align: center;
+}
+
 .video-container{
     text-align: center;
 }
 
-.video-container h3{
-    font-size: 30px;
-}
 
 .video-container img{
     width: 300px;
@@ -215,12 +218,13 @@ header .header-list a{
     margin-top: 100px;
 }
 
-.cg-container{
+.cg h3{
+    font-size: 30px;
     text-align: center;
 }
 
-.cg-container h3{
-    font-size: 30px;
+.cg-container{
+    text-align: center;
 }
 
 .cg-container img{
@@ -238,6 +242,84 @@ header .header-list a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (width>=769px){
+    .illustrater-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+    .illustrater-container img{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+        object-fit: cover;
+    }
+    
+    .illustrater-text{
+        width: 500px;
+        height: 500px;
+        display: block;
+        margin:  0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+    .video-container img{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+        object-fit: cover;
+    }
+    
+    .video-text{
+        width: 500px;
+        height: 500px;
+        display: block;
+        margin:  0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cg-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+
+    .cg-container img{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+        object-fit: cover;
+    }
+    
+    .cg-text{
+        width: 500px;
+        height: 500px;
+        display: block;
+        margin:  0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .collection{
