@@ -49,11 +49,20 @@ hr{
     font-size: 15px;
     width: 105px;
     overflow: hidden;
-    animation: typing 1.0s steps(100);
+    animation: typing 0.8s steps(100);
 }
 @keyframes typing{
     from{
         width: 0px;
+    }
+}
+
+@media (width>=769px){
+    .loading-text{
+        font-size: 30px;
+        width: 205px;
+        overflow: hidden;
+        animation: typing 0.8s steps(100);
     }
 }
 
