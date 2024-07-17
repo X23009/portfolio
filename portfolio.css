@@ -167,7 +167,7 @@ header .header-list a{
 
 .illustrater{
     width: 100%;
-    height: 650px;
+    height: 700px;
     margin-top: 100px;
     color: var(--milk);
 }
@@ -184,8 +184,11 @@ header .header-list a{
 
 .illustrater-container img{
     width: 300px;
+    height: 300px;
     margin-top: 30px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+    object-fit: cover;
 }
 
 .illustrater-text{
@@ -197,6 +200,11 @@ header .header-list a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.illustrater-text p{
+    width: 250px;
+    font-size: 11px;
 }
 
 .video{
@@ -221,6 +229,7 @@ header .header-list a{
     width: 300px;
     margin-top: 30px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
 }
 
 .video-text{
@@ -233,10 +242,14 @@ header .header-list a{
     align-items: center;
     justify-content: center;
 }
+.video-text p{
+    width: 250px;
+    font-size: 11px;
+}
 
 .cg{
     width: 100%;
-    height: 650px;
+    height: 550px;
     margin-top: 100px;
     color: var(--milk);
 }
@@ -255,6 +268,8 @@ header .header-list a{
     width: 300px;
     margin-top: 30px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+    object-position: 40%;
 }
 
 .cg-text{
@@ -266,6 +281,10 @@ header .header-list a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.cg-text p{
+    width: 250px;
+    font-size: 12px;
 }
 
 @media (width>=769px){
@@ -294,6 +313,11 @@ header .header-list a{
         justify-content: center;
     }
 
+    .illustrater-text p{
+        width: 400px;
+        font-size: 17px;
+    }
+
     .video-container{
         display: flex;
         align-items: center;
@@ -317,6 +341,15 @@ header .header-list a{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .video-text p{
+        width: 373px;
+        font-size: 17px;
+    }
+
+    .cg{
+        height: 650px;
     }
 
     .cg-container{
@@ -344,6 +377,11 @@ header .header-list a{
         align-items: center;
         justify-content: center;
     }
+
+    .cg-text p{
+        width: 380px;
+        font-size: 18.5px;
+    }
 }
 
 .collection{
@@ -367,6 +405,7 @@ header .header-list a{
     cursor: pointer;
     &::before{
         content: attr(data-text);
+        font-size: 10px;
         color: var(--milk);
         position: absolute;
         inset: 0;
@@ -385,7 +424,7 @@ header .header-list a{
             opacity: 1;
         }
         & img{
-            scale: 1.1;
+            scale: 1.2;
             filter: blur(2px) brightness(0.5);
         }
     }
@@ -403,6 +442,11 @@ header .header-list a{
         width: 100%;
         height: 700px;
         margin-top: 50px;
+    }
+    .card{
+        &::before{
+            font-size: 17px;
+        }
     }
     .collection-container{
         display: grid;
