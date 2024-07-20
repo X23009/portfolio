@@ -104,7 +104,7 @@ header .header-list a{
     text-decoration: none;
     color: var(--papaya);
     &:hover{
-        color: var(--papaya);
+        color: var(--milk);
         transition-duration: 0.3s;
     }
 }
@@ -219,8 +219,7 @@ header .header-list a{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(40px);
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    left: 5%;
     border-radius: 20px;
 }
 
@@ -268,8 +267,7 @@ header .header-list a{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(40px);
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    left: 5%;
     border-radius: 20px;
 }
 
@@ -315,8 +313,7 @@ header .header-list a{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(40px);
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    left: 5%;
     border-radius: 20px;
 }
 
@@ -717,3 +714,13 @@ footer p{
 
 
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
