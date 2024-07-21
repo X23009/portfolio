@@ -91,7 +91,7 @@ header {
     margin-right: 100px;
 }
 
-header .header-list {
+header .header-list{
     padding: 0;
     list-style: none;
     display: flex;
@@ -100,11 +100,28 @@ header .header-list {
     margin-right: 30px;
 }
 
+header .header-about-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.header-about-list li{
+    margin-right: 30px;
+}
+
 header .header-list a{
     text-decoration: none;
     color: var(--papaya);
     &:hover{
         color: var(--milk);
+        transition-duration: 0.3s;
+    }
+}
+header .header-about-list a{
+    text-decoration: none;
+    color: var(--papaya);
+    &:hover{
+        color: var(--black);
         transition-duration: 0.3s;
     }
 }
@@ -117,6 +134,10 @@ header .header-list a{
        margin-right: 1000px;
     }
     .header-list{
+        font-size: 20px;
+        gap: 40px;
+    }
+    .header-about-list{
         font-size: 20px;
         gap: 40px;
     }
