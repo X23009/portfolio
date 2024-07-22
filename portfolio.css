@@ -841,8 +841,6 @@ header .header-about-list a{
     height: 20px;
     content: "★★★★★";
     line-height: 20px;
-    }
-    &::before {
     color: var(--milk); 
     }
     &::after {
@@ -863,7 +861,7 @@ header .header-about-list a{
 
 @media (width>=769px){
     .profile{
-        height: 1300px;
+        height: 1100px;
     }
     .profile-container{
         position: relative;
@@ -905,6 +903,7 @@ header .header-about-list a{
 
     .rate-wrap {
         width: 400px;
+        margin-top: 10px;
     }
 }
 
