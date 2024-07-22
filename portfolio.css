@@ -633,10 +633,11 @@ header .header-about-list a{
     background-color: #000000;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition-duration: 0.7s;
 }
 .about-container h2{
-    font-size: 100px;
+    font-size: 90px;
     line-height: 1;
     color: transparent;
     -webkit-text-stroke: 1px var(--milk);
