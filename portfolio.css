@@ -868,7 +868,7 @@ header .header-about-list a{
         position: relative;
     }
     .profile-top{
-        gap: 250px;
+        gap: 100px;
     }
 
     .profile-name p{

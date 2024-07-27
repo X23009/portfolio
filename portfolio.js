@@ -27,3 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const content = document.querySelector('.logo-opacity');
+
+    
+    let opacity = 1.5 - (scrollPosition / windowHeight);
+    content.style.opacity = opacity;
+});
