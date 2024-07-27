@@ -575,8 +575,8 @@ header .header-about-list a{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
-    color: var(--papaya);
+    font-size: 20px;
+    color: var(--milk);
 }
 
 @media (width>=769px){
@@ -593,6 +593,7 @@ header .header-about-list a{
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 40px;
     }
 }
 
@@ -800,7 +801,7 @@ header .header-about-list a{
     width: 300px;
     height: 180px;
     display: block;
-    margin:  50px auto;
+    margin:  20px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -811,7 +812,7 @@ header .header-about-list a{
     backdrop-filter: blur(40px);
     border-radius: 20px;
     width: 300px;
-    height: 300px;
+    height: 330px;
     display: block;
     margin:  50px auto;
     position: relative;
@@ -896,7 +897,7 @@ header .header-about-list a{
     
     .profile-skill{
         width: 800px;
-        height: 400px;
+        height: 450px;
         display: block;
         margin:  50px auto;
     }
