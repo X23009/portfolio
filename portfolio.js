@@ -34,6 +34,6 @@ window.addEventListener('scroll', function() {
     const content = document.querySelector('.logo-opacity');
 
     
-    let opacity = 1.5 - (scrollPosition / windowHeight);
+    let opacity = 1.0 - (scrollPosition / windowHeight);
     content.style.opacity = opacity;
 });
