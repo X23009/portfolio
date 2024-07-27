@@ -12,7 +12,7 @@ html{
     --black2:#000000;
     --grey: #797979;
     --milk: #ebebeb;
-    --offwhite: #FFF9EE;
+    --offwhite: #ffffff;
 }
 
 body{
@@ -720,6 +720,7 @@ header .header-about-list a{
 }
 
 .works-container{
+    margin-top: 100px;
     width: 100%;
     height: 150px;
     background-color: var(--offwhite);
@@ -799,12 +800,17 @@ header .header-about-list a{
     backdrop-filter: blur(40px);
     border-radius: 20px;
     width: 300px;
-    height: 180px;
+    height: 280px;
     display: block;
     margin:  20px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.profile-text p{
+    width: 250px;
+    font-size: 15px;
 }
 
 .profile-skill{
@@ -892,7 +898,11 @@ header .header-about-list a{
         display: flex;
         align-items: center;
         justify-content: center;
-        
+    }
+
+    .profile-text p{
+        width: 600px;
+        font-size: 20px;
     }
     
     .profile-skill{
